@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextMainStyle">
+        <item name="android:textSize">@dimen/text_size_xbig</item>
+        <item name="fontStyle">italic</item>
+        <item name="android:textColor">@color/ming</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonMainStyle">
+        <item name="android:backgroundTint">@color/amaranth_purple</item>
+        <item name="android:textSize">@dimen/button_text_size_big</item>
+    </style>
+
+    <style name="TextFragmentViewStyle">
+        <item name="fontStyle">italic</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="EditTextFragmentViewStyle">
+        <item name="android:textSize">@dimen/edit_text_dialog_fragment_text_size_small</item>
+        <item name="android:textColorHint">@color/ming</item>
+    </style>
+
+    <style name="ButtonFragmentStyle">
+        <item name="android:backgroundTint">@color/amaranth_purple</item>
+        <item name="android:textSize">@dimen/button_text_size_big</item>
+    </style>
+</resources>

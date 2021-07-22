@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_xbig">35sp</dimen>
+    <dimen name="button_text_size_big">25sp</dimen>
+    <dimen name="main_activity_button_margin_xsmall">10dp</dimen>
+    <dimen name="text_size_normal">20sp</dimen>
+    <dimen name="edit_text_dialog_fragment_text_size_small">15sp</dimen>
+    <dimen name="dialog_fragment_margin_size_small">10dp</dimen>
+</resources>

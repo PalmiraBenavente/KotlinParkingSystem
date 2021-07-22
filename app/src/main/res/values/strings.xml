@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parking System Kotlin</string>
+    <string name="text_main_activity_parking">Welcome to the Parking</string>
+    <string name="button_main_select_parking">Select Parking Spaces</string>
+    <string name="text_view_dialog_fragment_set_space">Amount of spaces</string>
+    <string name="text_button_dialog_fragment_ok">OK</string>
+    <string name="toast_main_activity_select_space_parking">Amount of space selected: %1$d</string>
+</resources>
