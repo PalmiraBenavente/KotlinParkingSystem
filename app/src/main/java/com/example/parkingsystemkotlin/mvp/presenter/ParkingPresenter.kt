@@ -15,4 +15,8 @@ class ParkingPresenter(
         model.setParkingSpace(spaces)
         view.toastShowSpaces(model.getParkingSpace())
     }
+
+    override fun onBookParkingSpaces() {
+        view.showBookParkingPickers()
+    }
 }

@@ -5,4 +5,13 @@
     <string name="text_view_dialog_fragment_set_space">Amount of spaces</string>
     <string name="text_button_dialog_fragment_ok">OK</string>
     <string name="toast_main_activity_select_space_parking">Amount of space selected: %1$d</string>
+    <string name="button_main_book_parking_spaces">Reserve a Parking Lot</string>
+    <string name="text_activity_parking_title">BOOK YOUR PARKING LOT HERE</string>
+    <string name="text_button_reserver_parking_inic">Start</string>
+    <string name="text_button_reserver_parking_end">End</string>
+    <string name="text_edit_reserver_parking_place">ENTER THE PLACE HERE…</string>
+    <string name="text_edit_reserver_parking_code">ENTER THE CODE HERE…</string>
+    <string name="text_button_reserver_parking_save">Save</string>
+    <string name="fragment_date_picker_text_cancel">Cancele</string>
+    <string name="fragment_date_picker_text_ok">ok</string>
 </resources>

@@ -9,10 +9,12 @@ interface ParkingContract {
     interface MainActivityView {
         fun showSelectionParkingSpaces()
         fun toastShowSpaces(spaces: Int)
+        fun showBookParkingPickers()
     }
 
     interface MainActivityPresenter {
         fun onSelectParkingButtonPressed()
         fun onSetParkingButtonPressed(spaces: Int)
+        fun onBookParkingSpaces()
     }
 }

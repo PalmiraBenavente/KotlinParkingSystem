@@ -6,4 +6,6 @@
     <dimen name="text_size_normal">20sp</dimen>
     <dimen name="edit_text_dialog_fragment_text_size_small">15sp</dimen>
     <dimen name="dialog_fragment_margin_size_small">10dp</dimen>
+    <dimen name="reservation_activity_margin_top_size_normal">30dp</dimen>
+    <dimen name="border_drawable_size_xsmall">2dp</dimen>
 </resources>

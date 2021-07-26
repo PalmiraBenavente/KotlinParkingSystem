@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ming">
+
+        <DatePicker
+            android:id="@+id/date_picker_dialog_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ming"
+            android:datePickerMode="calendar"
+            android:headerBackground="@color/amaranth_purple"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TimePicker
+            android:id="@+id/time_picker_dialog_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ming"
+            android:timePickerMode="spinner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_picker_dialog_fragment" />
+
+        <Button
+            android:id="@+id/button_reservation_dialog_fragment_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/amaranth_purple"
+            android:text="@string/fragment_date_picker_text_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/button_reservation_dialog_fragment_confirm"
+            app:layout_constraintTop_toBottomOf="@id/time_picker_dialog_fragment" />
+
+        <Button
+            android:id="@+id/button_reservation_dialog_fragment_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/amaranth_purple"
+            android:text="@string/fragment_date_picker_text_ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/button_reservation_dialog_fragment_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time_picker_dialog_fragment" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
