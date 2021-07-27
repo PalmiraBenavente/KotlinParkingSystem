@@ -1,8 +1,7 @@
-package com.example.parkingsystemkotlin
+package com.example.parkingsystemkotlin.mvp.presenter
 
 import com.example.parkingsystemkotlin.mvp.contract.ParkingContract
 import com.example.parkingsystemkotlin.mvp.model.ParkingModel
-import com.example.parkingsystemkotlin.mvp.presenter.ParkingPresenter
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import junit.framework.Assert.assertEquals
@@ -30,6 +29,11 @@ class ParkingPresenterTest {
         presenter.onSetParkingButtonPressed(PARKING_SPACES)
         assertEquals(PARKING_SPACES, model.getParkingSpace())
         verify(view).toastShowSpaces(model.getParkingSpace())
+    }
+
+    @Test
+    fun `set reservation button pressed`() {
+        presenter.onBookParkingSpaces()
     }
 
     companion object {

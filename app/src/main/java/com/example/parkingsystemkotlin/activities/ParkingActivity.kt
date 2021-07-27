@@ -1,4 +1,4 @@
-package com.example.parkingsystemkotlin
+package com.example.parkingsystemkotlin.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +24,7 @@ class ParkingActivity : AppCompatActivity(), ListenerDialogFragment {
 
     private fun setListeners() {
         binding.buttonMainSelectParking.setOnClickListener { presenter.onSelectParkingButtonPressed() }
+        binding.buttonMainBookParkingSpaces.setOnClickListener { presenter.onBookParkingSpaces() }
     }
 
     override fun setAmountParkingSpaces(spaces: Int) {

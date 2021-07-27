@@ -2,7 +2,6 @@ package com.example.parkingsystemkotlin.mvp.view
 
 import androidx.fragment.app.DialogFragment
 import com.example.parkingsystemkotlin.databinding.FragmentDialogSpaceParkingBinding
-import com.example.parkingsystemkotlin.fragments.SpacesParkingDialogFragment
 import com.example.parkingsystemkotlin.mvp.contract.DialogSpaceParkingContract
 import com.example.parkingsystemkotlin.mvp.view.base.FragmentView
 
@@ -15,6 +14,6 @@ class DialogSpaceParkingView(
         binding.editTextDialogFragmentSpaces.text.toString()
 
     override fun dismissDialogFragment() {
-        (fragment as SpacesParkingDialogFragment?)?.dismiss()
+        (fragment as DialogFragment).dismiss()
     }
 }

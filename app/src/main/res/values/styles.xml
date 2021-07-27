@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="TextMainStyle">
         <item name="android:textSize">@dimen/text_size_xbig</item>
         <item name="fontStyle">italic</item>
@@ -26,6 +27,29 @@
 
     <style name="ButtonFragmentStyle">
         <item name="android:backgroundTint">@color/amaranth_purple</item>
+        <item name="android:textSize">@dimen/button_text_size_big</item>
+    </style>
+
+    <style name="TitleActivityReservation">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="fontStyle">italic</item>
+        <item name="android:textColor">@color/ming</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="EditTextReserverStyle">
+        <item name="android:textSize">@dimen/edit_text_dialog_fragment_text_size_small</item>
+        <item name="android:textColorHint">@color/ming</item>
+        <item name="android:textColor">@color/ming</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/border_edit_text</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="ButtonReserverStyle">
+        <item name="android:backgroundTint">@color/ming</item>
         <item name="android:textSize">@dimen/button_text_size_big</item>
     </style>
 </resources>
