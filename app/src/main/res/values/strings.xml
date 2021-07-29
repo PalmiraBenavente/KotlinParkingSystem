@@ -13,5 +13,12 @@
     <string name="text_edit_reserver_parking_code">ENTER THE CODE HERE…</string>
     <string name="text_button_reserver_parking_save">Save</string>
     <string name="fragment_date_picker_text_cancel">Cancele</string>
-    <string name="fragment_date_picker_text_ok">ok</string>
+    <string name="fragment_date_picker_text_ok">OK</string>
+    <string name="toast_resaervation_parking">your lot number %1$d and your code is %2$d \n Start date: %3$s \n End date: %4$s</string>
+    <string name="toast_reservation_overlap">Error: There is already a reservation in that space and time!</string>
+    <string name="toast_reservation_ok">reservation successfully saved!</string>
+    <string name="toast_reservation_missing_code">enter the code, please</string>
+    <string name="toast_reservation_overlap_missing_lot">enter the lot, please</string>
+    <string name="toast_reservation_missing_date">enter the date, please</string>
+    <string name="toast_format_erro">Error in calendar format, please try again!</string>
 </resources>
