@@ -40,6 +40,10 @@ class SpacesParkingDialogFragment : DialogFragment() {
     }
 
     private fun setListener() {
-        binding.buttonDialogFragmentOk.setOnClickListener { presenter.onSaveButtonPressed(inputSpaceListener) }
+        binding.buttonDialogFragmentOk.setOnClickListener {
+            presenter.onSaveButtonPressed(
+                inputSpaceListener
+            )
+        }
     }
 }

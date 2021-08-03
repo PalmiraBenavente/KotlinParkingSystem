@@ -1,15 +1,13 @@
 package com.example.parkingsystemkotlin.mvp.model
 
+import com.example.parkingsystemkotlin.database.ParkingDatabase
 import com.example.parkingsystemkotlin.mvp.contract.ParkingContract
-import com.example.parkingsystemkotlin.utils.Constant
 
-class ParkingModel() : ParkingContract.MainActivityModel {
-
-    private var parkingLots: Int = Constant.PARKING_LOT_NOT_SET
+class ParkingModel(private val database: ParkingDatabase) : ParkingContract.MainActivityModel {
 
     override fun setParkingSpace(spaces: Int) {
-        parkingLots = spaces
+        database.setParkingLots(spaces)
     }
 
-    override fun getParkingSpace(): Int = parkingLots
+    override fun getParkingSpace() = database.getParkingLots()
 }

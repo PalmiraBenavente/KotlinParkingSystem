@@ -2,6 +2,7 @@ package com.example.parkingsystemkotlin.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.parkingsystemkotlin.database.ParkingDatabase
 import com.example.parkingsystemkotlin.databinding.ActivityMainBinding
 import com.example.parkingsystemkotlin.listener.ListenerDialogFragment
 import com.example.parkingsystemkotlin.mvp.contract.ParkingContract
@@ -18,7 +19,10 @@ class ParkingActivity : AppCompatActivity(), ListenerDialogFragment {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        presenter = ParkingPresenter(model = ParkingModel(), view = ParkingView(this, binding))
+        presenter = ParkingPresenter(
+            model = ParkingModel(database = ParkingDatabase),
+            view = ParkingView(this, binding)
+        )
         setListeners()
     }
 

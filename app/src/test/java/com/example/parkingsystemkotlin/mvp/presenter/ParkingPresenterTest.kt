@@ -1,16 +1,17 @@
 package com.example.parkingsystemkotlin.mvp.presenter
 
+import com.example.parkingsystemkotlin.database.ParkingDatabase
 import com.example.parkingsystemkotlin.mvp.contract.ParkingContract
 import com.example.parkingsystemkotlin.mvp.model.ParkingModel
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
-import junit.framework.Assert.assertEquals
+import junit.framework.TestCase.assertEquals
 import org.junit.Before
 import org.junit.Test
 
 class ParkingPresenterTest {
     private lateinit var presenter: ParkingContract.MainActivityPresenter
-    private var model: ParkingContract.MainActivityModel = ParkingModel()
+    private var model: ParkingContract.MainActivityModel = ParkingModel(database = ParkingDatabase)
     private val view: ParkingContract.MainActivityView = mock()
 
     @Before
